@@ -1,0 +1,81 @@
+{% extends "blog/base.html" %}
+    {% block content %}
+    <!--================================================== -->
+
+
+  </br></br>
+<div class="container ">
+ <h1 class="team" style="	font-size:70px;
+  font-family: monospace;
+  color:  orange;
+  margin-left:7%;
+	font-weight: 900;
+    text-shadow: 3px 3px #e2e2e2;">GAMES</h1>
+</div>
+</br></br></br>
+ <div class="row">
+
+     <div class="card" style="width: 18rem; align-items: center !important; background-color: #01a3a4;  ">
+      <img class="card-img-top" src="/media/profile_pics/bird.png" alt="Card image cap" style="background-size: cover; height:210px !important;">
+      <div class="card-body" >
+        <h5 class="card-title" style="font-weight: bold; font-family: Bree Serif;">MAD BIRD</h5>
+        <p class="card-text" style="font-weight: bold; color: white;">“Mad Bird” game project is developed using Unity Game Engine. <!--Talking about the gameplay, user has to kill the enemy in order to gain score points.--></p>
+        <a href="{% url 'blog-bird' %}" class="btn btn-danger" style="font-weight: bold;">PLAY GAMES</a>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem; align-items: center !important;  background-color: #01a3a4;">
+      <img class="card-img-top" src="/media/profile_pics/shape.png" alt="Card image cap" style="background-size: cover; height:186px;">
+      <div class="card-body" >
+        <h5 class="card-title" style="font-weight: bold; font-family: Bree Serif;">SHAPE RUNNER</h5>
+        <p class="card-text" style="font-weight: bold; color: white;" >“SHAPE RUNNER” game <br>project is developed using Unity Game Engine.</p>
+        <a href="{% url 'blog-Shape' %}" class="btn btn-danger" style="font-weight: bold;">PLAY GAMES</a>
+      </div>
+  </div>
+
+  <div class="card" style="width: 18rem; align-items: center !important; background-color: #01a3a4; ">
+<!--      <img class="card-img-top" src="/media/profile_pics/img2_x7eKjPi.png" alt="Card image cap" style="background-size: cover;">-->
+<!--      <div class="card-body" >-->
+<!--        <h5 class="card-title" style="font-weight: bold; font-family: Bree Serif;">SLASH HERO</h5>-->
+<!--        <p class="card-text" style="font-weight: bold; color: white;">“Slash Hero” game project is developed using Unity Game Engine. &lt;!&ndash;Talking about the gameplay, user has to kill the enemy in order to gain score points.&ndash;&gt;</p>-->
+<!--        <a href="{% url 'blog-index' %}" class="btn btn-danger" style="font-weight: bold;">PLAY GAMES</a>-->
+<!--      </div>-->
+      <img class="card-img-top" src="/media/profile_pics/pong.png" alt="Card image cap" style="background-size: cover; height:180px !important;">
+      <div class="card-body" >
+        <h5 class="card-title" style="font-weight: bold; font-family: Bree Serif;">PING PONG</h5>
+        <p class="card-text" style="font-weight: bold; color: white;">“Ping Pong” game project is developed using Unity Game Engine. <!--Talking about the gameplay, user has to kill the enemy in order to gain score points.--></p>
+        <a href="{% url 'blog-pong' %}" class="btn btn-danger" style="font-weight: bold;">PLAY GAMES</a>
+      </div>
+    </div>
+
+<!--<div class="card" style="width: 18rem; align-items: center !important; background-color: #01a3a4; margin-top:40px; ">-->
+<!--      <img class="card-img-top" src="/media/profile_pics/pong.png" alt="Card image cap" style="background-size: cover; height:180px !important;">-->
+<!--      <div class="card-body" >-->
+<!--        <h5 class="card-title" style="font-weight: bold; font-family: Bree Serif;">PING PONG</h5>-->
+<!--        <p class="card-text" style="font-weight: bold; color: white;">“Ping Pong” game project is developed using Unity Game Engine. &lt;!&ndash;Talking about the gameplay, user has to kill the enemy in order to gain score points.&ndash;&gt;</p>-->
+<!--        <a href="{% url 'blog-pong' %}" class="btn btn-danger" style="font-weight: bold;">PLAY GAMES</a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+ </div>
+    <style type="text/css">
+      .card{
+        margin-top: auto;
+        margin-left: 95px;
+        display: inline-block;
+        padding: 10px 10px;
+        /* margin: 30px; */
+      }
+      .card:hover{
+        box-shadow:0px 0px 100px black;
+      }
+       @media max-width:(768px) {
+       .card{
+        background-size: cover;
+       }
+      }
+    </style>
+
+{% endblock content %}
